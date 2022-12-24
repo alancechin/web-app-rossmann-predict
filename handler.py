@@ -9,7 +9,7 @@ from rossmann.Rossmann import Rossmann
 from flask import Flask, request, Response
 
 # loading model
-model = pickle.load(open('model/model_xgb_rossmann.pkl', 'rb'))
+model = pickle.load(open('model/model_xgb.pkl', 'rb'))
 
 # instaciando objeto da classe Flask que será a API
 app = Flask( __name__ )
